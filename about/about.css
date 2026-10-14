@@ -26,11 +26,14 @@
   z-index: 1;
   padding: 120px 24px;
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.3));
+  width: 100%;
+  max-width: 100%;
 }
 
 .about-inner {
   max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .eyebrow {
@@ -46,10 +49,11 @@
   border-radius: 9999px;
   background: var(--surface);
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .about h2 {
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-size: clamp(1.6rem, 5vw, 2.75rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -59,6 +63,8 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 48px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .about-grid {
@@ -122,10 +128,11 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 12px;
+  gap: 8px;
   padding: 12px 0;
   border-bottom: 1px solid var(--border);
   font-size: 14px;
+  flex-wrap: wrap;
 }
 .team-list li:last-child { border-bottom: none; }
 
@@ -212,4 +219,42 @@
 footer {
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 680px) {
+  .about {
+    padding: 36px 16px 40px;
+  }
+  .about h2 {
+    margin-bottom: 24px;
+  }
+  .hero-photo {
+    margin: 0 0 32px 0;
+    border-radius: 16px;
+  }
+  .about-grid {
+    gap: 24px;
+  }
+  .team-card {
+    position: static;
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+  .team-list li {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-actions .btn-primary,
+  .about-actions .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+  }
 }
