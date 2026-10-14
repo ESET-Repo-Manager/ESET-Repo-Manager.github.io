@@ -21,9 +21,9 @@
   },
   {
     "name": "Guillaume Warichet",
-    "role": "Co-Founder & Aerodynamics Lead ",
-    "category": "aero",
-    "badgeText": "Aerodynamics",
+    "role": "Co-Founder & Chassis Lead ",
+    "category": "Chassis",
+    "badgeText": "Chassis",
     "image": "",
     "initials": "GW",
     "bio": "",
@@ -148,5 +148,15 @@
     "initials": "NYEB",
     "bio": "Responsible for the management of all the acquired data from the cars to the humans.",
     "tags": ["Telecommunication", "signal processing"]
+  },
+  {
+    "name": "Lincoln Lassey",
+    "role": "BMS engineer",
+    "category": "powertrain",
+    "badgeText": "Powertrain",
+    "image": "",
+    "initials": "LL",
+    "bio": "",
+    "tags": ["powertrain"]
   }
 ]
