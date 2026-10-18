@@ -158,5 +158,26 @@
     "initials": "LL",
     "bio": "",
     "tags": ["powertrain"]
+  },
+  {
+    "name": "Arthur Drugmand",
+    "role": "Chassis Team",
+    "category": "Chassis",
+    "badgeText": "Chassis & Mechanical",
+    "image": "",
+    "initials": "AD",
+    "bio": "",
+    "tags": ["Chassis"]
+  },
+  {
+    "name": "Martin Wilms",
+    "role": "Outreach & Communication",
+    "category": "operations",
+    "badgeText": "Communication & Operations",
+    "image": "",
+    "initials": "MW",
+    "bio": "",
+    "tags": ["Communication"]
   }
+
 ]
