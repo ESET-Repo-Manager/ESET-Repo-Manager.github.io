@@ -1,0 +1,260 @@
+
+.hero-photo {
+  margin: 0 0 56px 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+.hero-photo figcaption {
+  padding: 14px 20px;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  letter-spacing: 0.02em;
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+  padding: 120px 24px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.3));
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: var(--surface);
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.about h2 {
+  font-size: clamp(1.6rem, 5vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 720px;
+  background: linear-gradient(180deg, #ffffff, rgba(255,255,255,0.65));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 48px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 48px;
+  }
+}
+
+.about-text p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.about-text p strong { color: var(--text); font-weight: 600; }
+.about-text p em { color: var(--text); font-style: italic; }
+
+.signoff {
+  margin-top: 32px !important;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-style: italic;
+  color: var(--text) !important;
+}
+
+.team-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 24px;
+}
+
+.team-card h4 {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.team-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.team-list li:last-child { border-bottom: none; }
+
+.team-list .role {
+  color: var(--muted);
+  font-size: 12px;
+}
+.team-list .name {
+  color: var(--text);
+  font-weight: 500;
+  text-align: right;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.stat-num {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.team-card-cta {
+  margin: 18px 0 20px;
+}
+
+.btn-meet-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 9999px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-meet-team:hover {
+  background: var(--active-surface);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.about-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about-actions .btn-primary,
+.about-actions .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 680px) {
+  .about {
+    padding: 36px 16px 40px;
+  }
+  .about h2 {
+    margin-bottom: 24px;
+  }
+  .hero-photo {
+    margin: 0 0 32px 0;
+    border-radius: 16px;
+  }
+  .about-grid {
+    gap: 24px;
+  }
+  .team-card {
+    position: static;
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+  .team-list li {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-actions .btn-primary,
+  .about-actions .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+  }
+}
