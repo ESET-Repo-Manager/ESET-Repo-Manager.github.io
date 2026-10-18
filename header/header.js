@@ -22,7 +22,7 @@ function createHeader() {
         <img class="esc-logo" src="/ressources/logo.png" alt="logo of the ecam solar endurance team"/>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="/" class="nav-brand">ESET <span>/ Student Racing</span></a>
+        <a href="/" class="nav-brand">ESET <span>/ Student Solar Racing</span></a>
         <ul class="nav-links">
           <li><a class="${activePage === 'home' ? 'active' : ''}" href="/">Home</a></li>
           <li><a class="${activePage === 'about' ? 'active' : ''}" href="/about/about.html">About</a></li>
