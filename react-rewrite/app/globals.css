@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@theme {
+  --color-eset-main: #0b142b;
+  --color-hovered-txt: #f5f5f7;
+  --color-active-surface: rgba(255, 255, 255, 0.1);
+  --color-hovered-border: rgba(255, 255, 255, 0.08);
+  --color-muted: #9cb3d9;
+}
