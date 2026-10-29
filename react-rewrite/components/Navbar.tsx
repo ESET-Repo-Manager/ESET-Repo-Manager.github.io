@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function NavListElement(props: { name: string; reference: Url }) {
   return (
-    <li className="text-white hover:bg-sky-800 rounded-full p-2 sm:p-10">
+    <li className="text-white hover:bg-blur rounded-full p-2 sm:p-10">
       <Link href={props.reference}> {props.name}</Link>
     </li>
   );
