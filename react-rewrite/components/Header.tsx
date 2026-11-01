@@ -11,7 +11,10 @@ export function Header() {
         <Image alt="eset logo" src={ESETLogo} width={300}></Image>
       </Link>
 
-      <span> ESET / Student Solar Racing </span>
+      <span className="tracking-widest">
+        <span className="font-bold">ESET</span>{" "}
+        <span className="text-muted">/ Student Solar Racing</span>{" "}
+      </span>
       <Navbar></Navbar>
     </header>
   );

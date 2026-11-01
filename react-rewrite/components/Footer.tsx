@@ -13,7 +13,9 @@ export function Footer() {
       >
         <Image src={LILogo} alt="LinkedIn link" width={50}></Image>
       </Link>
-      <span>© ECAM Solar Endurance Team — ESET</span>
+      <span className="text-xs sm:text-sm text-muted">
+        © ECAM Solar Endurance Team — ESET
+      </span>
       <Link
         href="https://www.instagram.com/eset_ecam/"
         className="hover:scale-110 transition-all"
