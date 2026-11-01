@@ -3,9 +3,9 @@ import { RoundedH1 } from "@/components/RoundedH1";
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-eset-main text-white p-5 sm:p-10 items-center">
+    <main className="bg-eset-main flex flex-col items-center p-5 text-white sm:p-10">
       <RoundedH1>
-        <span className="bg-white rounded-full w-1.5 h-1.5 mr-2 animate-pulse inline-block"></span>{" "}
+        <span className="mr-2 inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-white"></span>{" "}
         SEASON 01 — ETHER
       </RoundedH1>
       <p className="">Harnessing the sun. Racing to shine.</p>
