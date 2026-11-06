@@ -32,4 +32,16 @@ body {
   --color-hovered-border: rgba(255, 255, 255, 0.08);
   --color-muted: #9cb3d9;
   --color-smooth-surface: rgba(255, 255, 255, 0.01);
+
+  --animate-fade-in: fade-in 3s ease-out;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
 }
