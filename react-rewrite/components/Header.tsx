@@ -6,8 +6,8 @@ import "@/app/globals.css";
 
 export function Header() {
   return (
-    <header className="bg-eset-main text-white flex flex-col items-center sm:flex-row sm:justify-end">
-      <Link href="/" className="hover:scale-110 transition-all">
+    <header className="bg-eset-main flex flex-col items-center text-white sm:flex-row sm:items-center sm:gap-10">
+      <Link href="/" className="transition-all hover:scale-110">
         <Image alt="eset logo" src={ESETLogo} width={300}></Image>
       </Link>
 

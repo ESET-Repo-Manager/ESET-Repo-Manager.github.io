@@ -15,8 +15,8 @@ function NavListElement(props: {
       onClick={() => props.onSelect(props.position)}
       className={
         props.stateArray[props.position]
-          ? "text-hovered-txt bg-active-surface border-hovered-border border-solid border-2 hover:text-white hover:bg-active-surface hover:border-hovered-border rounded-full py-2 px-4 transition-all"
-          : "text-muted border-transparent border-solid border-2 hover:text-white hover:scale-105 hover:bg-active-surface hover:border-hovered-border rounded-full py-2 px-4 transition-all"
+          ? "text-hovered-txt bg-active-surface border-hovered-border hover:bg-active-surface hover:border-hovered-border rounded-full border-1 border-solid px-4 py-2 transition-all hover:text-white"
+          : "text-muted hover:bg-smooth-surface hover:border-hovered-border rounded-full border-1 border-solid border-transparent px-4 py-2 transition-all hover:scale-105 hover:text-white"
       }
     >
       <Link href={props.reference}> {props.name}</Link>
@@ -39,7 +39,7 @@ export function Navbar() {
   }
   return (
     <nav>
-      <ol className="flex flex-row gap-3 sm:gap-7 font-bold text-sm sm:text-xl tracking-wider sm:tracking-wider  justify-center sm:justify-around m-2 sm:m-5 transition-all">
+      <ol className="m-2 flex flex-row justify-center gap-3 text-sm font-bold tracking-wider transition-all sm:m-5 sm:justify-around sm:gap-7 sm:tracking-wider">
         <NavListElement
           name="Home"
           reference="/"
