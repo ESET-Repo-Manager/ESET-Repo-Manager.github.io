@@ -33,7 +33,7 @@ body {
   --color-muted: #9cb3d9;
   --color-smooth-surface: rgba(255, 255, 255, 0.01);
 
-  --animate-fade-in: fade-in 3s ease-out;
+  --animate-fade-in: fade-in 10s ease-in;
 
   @keyframes fade-in {
     0% {
