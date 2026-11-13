@@ -3,15 +3,10 @@ import Image from "next/image";
 import { RoundedH1 } from "@/components/RoundedH1";
 import { useState } from "react";
 import { RoundedLink } from "@/components/RoundedLink";
+import { RoundedEdgeRectangle } from "@/components/RoundedEdgeRectangle";
+import { BigH2 } from "@/components/BigH2";
 
 const photoPaths = ["/showCase1.jpg", "/showCase2.jpg", "/showCase3.jpg"];
-function BigP(props: { children: React.ReactNode }) {
-  return (
-    <p className="text-center text-3xl font-extrabold shadow-2xl/80 backdrop-brightness-150 sm:text-6xl">
-      {props.children}
-    </p>
-  );
-}
 
 export default function Home() {
   const [Index, setIndex] = useState(0);
@@ -23,8 +18,7 @@ export default function Home() {
         SEASON 01 — ETHER
       </RoundedH1>
       <section className="m-5 flex flex-col items-center">
-        <BigP>Harnessing the sun.</BigP>
-        <BigP>Racing to shine.</BigP>
+        <BigH2>Harnessing the sun. Racing to shine.</BigH2>
         <div className="relative mr-5 h-96 w-sm sm:mt-10 md:w-lg">
           <Image
             src={photoPaths[Index]}
@@ -62,6 +56,20 @@ export default function Home() {
           isDark={true}
           showArrow={false}
         ></RoundedLink>
+      </div>
+      <div className="my-5 flex flex-col items-center gap-3 sm:flex-row">
+        <RoundedEdgeRectangle
+          title="100% Solar Powered"
+          content="Designing ultra-efficient photovoltaic cells, aerodynamics and electric drivetrains"
+        ></RoundedEdgeRectangle>
+        <RoundedEdgeRectangle
+          title="Open to everyone"
+          content="Come if you too want to be gleaming brighter than sun. Teachers & students welcome"
+        ></RoundedEdgeRectangle>
+        <RoundedEdgeRectangle
+          title="Preparing to race"
+          content="First round in September 2028"
+        ></RoundedEdgeRectangle>
       </div>
     </main>
   );
