@@ -2,14 +2,12 @@
 import Image from "next/image";
 import { RoundedH1 } from "@/components/RoundedH1";
 import { useState } from "react";
-import showCase from "@/public/showCase.jpg";
-import LI from "@/public/LIlogo.png";
+import { RoundedLink } from "@/components/RoundedLink";
 
-const photoPaths = ["/showCase.jpg", "/logo.png", "/Instalogo.png"];
-const photoPaths1 = [showCase, LI];
+const photoPaths = ["/showCase1.jpg", "/showCase2.jpg", "/showCase3.jpg"];
 function BigP(props: { children: React.ReactNode }) {
   return (
-    <p className="text-center text-3xl font-extrabold sm:text-6xl">
+    <p className="text-center text-3xl font-extrabold shadow-2xl/80 backdrop-brightness-150 sm:text-6xl">
       {props.children}
     </p>
   );
@@ -17,6 +15,7 @@ function BigP(props: { children: React.ReactNode }) {
 
 export default function Home() {
   const [Index, setIndex] = useState(0);
+  console.log("je suis bg");
   return (
     <main className="bg-eset-main flex flex-col items-center p-5 text-white sm:p-10">
       <RoundedH1>
@@ -26,11 +25,11 @@ export default function Home() {
       <section className="m-5 flex flex-col items-center">
         <BigP>Harnessing the sun.</BigP>
         <BigP>Racing to shine.</BigP>
-        <div className="relative h-96 w-sm sm:mt-10 md:w-lg">
+        <div className="relative mr-5 h-96 w-sm sm:mt-10 md:w-lg">
           <Image
             src={photoPaths[Index]}
             alt="Photo showcasing advancements"
-            className="h-sm animate-fade-in w-sm rounded-full object-contain"
+            className="h-sm animate-fade-in w-sm transform-gpu rounded-full object-contain will-change-[opacity]"
             fill
             key={Index}
             onAnimationEnd={() => {
@@ -46,10 +45,24 @@ export default function Home() {
           ></Image>
         </div>
       </section>
-      <p className="text-muted text-center">
+      <p className="text-muted text-center sm:w-xl sm:tracking-widest">
         ECAM Solar Endurance Team (ESET) is a brand-new solar race team founded
         by students & teachers at ECAM Brussels.
       </p>
+      <div className="flex flex-row">
+        <RoundedLink
+          src="/join"
+          content="Join the Crew"
+          isDark={false}
+          showArrow={true}
+        ></RoundedLink>
+        <RoundedLink
+          src="/team"
+          content="Read our story"
+          isDark={true}
+          showArrow={false}
+        ></RoundedLink>
+      </div>
     </main>
   );
 }
